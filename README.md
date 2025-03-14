@@ -1,58 +1,60 @@
-# product-list-fakestore
+# Product Management System
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple product management interface built with Vue 3, TypeScript, Pinia, and Tailwind CSS.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- View a list of products
+- Add new products with name and price
+- Edit existing products
+- Delete products
+- Search functionality to filter products
+- Responsive design that works on all devices
 
-## Type Support for `.vue` Imports in TS
+## Technology Stack
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Vue 3**: Frontend framework
+- **TypeScript**: Type checking
+- **Pinia**: State management
+- **Tailwind CSS**: Styling
+- **Vite**: Build tool
+- **Axios**: API requests
 
 ## Project Setup
 
-```sh
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/product-manager.git
+cd product-manager
+
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Run development server
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Build for production
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Project Structure
 
-```sh
-npm run test:unit
+```
+product-manager/
+├── src/
+│   ├── components/         # UI Components
+│   ├── services/           # API services
+│   ├── stores/             # Pinia stores
+│   ├── types/              # TypeScript types
+│   ├── App.vue             # Main component
+│   ├── main.ts             # Entry point
+│   └── style.css           # Global styles
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+## API Integration
 
-```sh
-# Install browsers for the first run
-npx playwright install
+This project uses the [Fake Store API](https://fakestoreapi.com/products) to fetch initial product data. Create, update, and delete operations are simulated in the frontend.
 
-# When testing on CI, must build the project first
-npm run build
+## License
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+Open source, free to use and modify as needed.
